@@ -8,5 +8,5 @@
     <ImageView
         android:layout_width="@dimen/splash_image_wt"
         android:layout_height="@dimen/splash_image_ht"
-        android:background="@mipmap/logo_bg_none"/>
+        android:background="@mipmap/log_bg_black_none"/>
 </RelativeLayout>
