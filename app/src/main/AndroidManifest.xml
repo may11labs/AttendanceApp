@@ -4,14 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/logo"
+        android:icon="@mipmap/logo_bg_none"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+        android:supportsRtl="true">
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="main.attendance.com.attendanceapp.LoginActivity" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

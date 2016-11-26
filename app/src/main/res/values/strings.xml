@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AttendanceApp</string>
+    <string name="app_name">SchoolMaster</string>
+    <string name="role_label">I am</string>
 </resources>

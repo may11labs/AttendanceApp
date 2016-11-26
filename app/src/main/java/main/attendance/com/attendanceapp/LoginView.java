@@ -1,8 +1,5 @@
 package main.attendance.com.attendanceapp;
 
-/**
- * Created by OM SAI RAM on 15/07/16.
- */
 public interface LoginView {
 
 

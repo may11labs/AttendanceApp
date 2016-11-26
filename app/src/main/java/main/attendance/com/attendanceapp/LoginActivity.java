@@ -1,14 +1,16 @@
 package main.attendance.com.attendanceapp;
 
+import android.app.Activity;
 import android.content.Context;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity implements LoginView{
-
+public class LoginActivity extends Activity implements LoginView
+{
 
     TextView usernameView;
     TextView passwordView;
@@ -19,12 +21,20 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+            setContentView(R.layout.activity_login);
+
+        //TODO Parameterize School Name
+        /*getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar);
+        TextView title=(TextView)findViewById(getResources().getIdentifier("action_bar_title", "id", getPackageName()));
+        title.setText("Mount Carmel High School");*/
+
 
 
         mContext = this;
-        usernameView = (TextView) findViewById(R.id.txtUsername);
-        passwordView = (TextView) findViewById(R.id.txtPassword);
+        //usernameView = (TextView) findViewById(R.id.txtUsername);
+        //passwordView = (TextView) findViewById(R.id.txtPassword);
+
         loginService = new LoginService();
         presenter = new LoginPresenter(this,loginService);
     }
