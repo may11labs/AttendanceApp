@@ -2,10 +2,15 @@ package main.attendance.com.attendanceapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +23,12 @@ public class LoginActivity extends Activity implements LoginView
     Context mContext;
     LoginPresenter presenter;
 
+    Button btnTeacher;
+    Button btnPrincipal;
+    Button btnPassSubmit;
+
+    LinearLayout linPassLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +40,43 @@ public class LoginActivity extends Activity implements LoginView
         TextView title=(TextView)findViewById(getResources().getIdentifier("action_bar_title", "id", getPackageName()));
         title.setText("Mount Carmel High School");*/
 
-
-
         mContext = this;
         //usernameView = (TextView) findViewById(R.id.txtUsername);
         //passwordView = (TextView) findViewById(R.id.txtPassword);
 
         loginService = new LoginService();
         presenter = new LoginPresenter(this,loginService);
+
+        btnPrincipal = (Button) findViewById(R.id.btnPrincipal);
+        btnTeacher = (Button) findViewById(R.id.btnTeacher);
+        btnPassSubmit = (Button) findViewById(R.id.btnPassSubmit);
+        linPassLayout = (LinearLayout) findViewById(R.id.linPassLayout);
+
+        btnTeacher.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                linPassLayout.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btnPassSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, OptionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPrincipal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(LoginActivity.this, OptionActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void checkLogin(View view)

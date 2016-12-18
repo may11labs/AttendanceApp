@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">SchoolMaster</string>
     <string name="role_label">I am</string>
+
+    <string name="role1">Teacher</string>
+    <string name="role2">Principal</string>
+    <string name="role3">Accountant</string>
+
+    <string name="pass_code">PassCode</string>
+    <string name="btn_pass">Check</string>
+
+    <string name="attendance">Attendance</string>
+    <string name="academics">Academics</string>
+    <string name="report">Report</string>
 </resources>

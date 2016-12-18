@@ -8,6 +8,35 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
         android:supportsRtl="true">
+
+        <activity android:name=".ReportActivity">
+            <intent-filter>
+                <action android:name="main.attendance.com.attendanceapp.ReportActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AcademicsActivity">
+            <intent-filter>
+                <action android:name="main.attendance.com.attendanceapp.AcademicsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AttendanceActivity">
+            <intent-filter>
+                <action android:name="main.attendance.com.attendanceapp.AttendanceActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OptionActivity">
+            <intent-filter>
+                <action android:name="main.attendance.com.attendanceapp.OptionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="main.attendance.com.attendanceapp.LoginActivity" />
@@ -20,7 +49,6 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

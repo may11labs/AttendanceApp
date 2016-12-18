@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Report"/>
+
+    <RadioButton
+        android:text="Student"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radioBtnStudent" />
+
+    <RadioButton
+        android:text="Class"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radioBtnTeacher" />
+
+    <RadioButton
+        android:text="School"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radioBtnClass" />
+
+    <Button
+        android:id="@+id/btnShowReport"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/ButtonTextColor"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:text="Generate"/>
+
+</LinearLayout>

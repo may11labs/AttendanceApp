@@ -120,3 +120,44 @@
 
 </RelativeLayout>
 
+
+-------------------------------------------------
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout android:layout_weight="1"
+        android:layout_height=""
+        android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/btnTeacher"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ButtonTextColor"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:text="@string/role1"/>
+
+        <Button
+            android:id="@+id/btnPrincipal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ButtonTextColor"
+            android:background="@color/colorPrimary"
+            android:text="@string/role2"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

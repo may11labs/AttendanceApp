@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnAttendance"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/ButtonTextColor"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:text="@string/attendance"/>
+
+    <Button
+        android:id="@+id/btnAcademics"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/ButtonTextColor"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:text="@string/academics"/>
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/ButtonTextColor"
+        android:background="@color/colorPrimary"
+        android:text="@string/report"/>
+
+</LinearLayout>

@@ -1,57 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:baselineAligned="false">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:background="@color/ButtonTextColor"
-        tools:context="main.attendance.com.attendanceapp.LoginActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@color/colorPrimary"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/ButtonTextColor"
         android:gravity="center"
-        android:textSize="30dp"
-        android:paddingTop="180dp"
-        android:text="Mount Caramel High School"/>
+        android:layout_weight="1">
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btnTeacher"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ButtonTextColor"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:text="@string/role1"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:textSize="25dp"
-        android:text="I am"/>
+        <Button
+            android:id="@+id/btnPrincipal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ButtonTextColor"
+            android:background="@color/colorPrimary"
+            android:text="@string/role2"/>
 
-    <Button
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linPassLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/ButtonTextColor"
-        android:text="Teacher"/>
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/ButtonTextColor"
-        android:text="Principal"/>
+        <EditText
+            android:id="@+id/txtPassCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_code"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/ButtonTextColor"
-        android:text="Accountant"/>
+        <Button
+            android:id="@+id/btnPassSubmit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ButtonTextColor"
+            android:background="@color/colorPrimary"
+            android:text="@string/btn_pass"/>
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
+
